@@ -41,12 +41,15 @@ class Board:
         for i in directions:
             if self.State[i[0]][i[1]]:
                 neighbors.append(self.State[i[0]][i[1]])
-        print(neighbors)
+        return neighbors
 
     def swap(self, num):
         zero = self.getIndex(0)
         number = self.getIndex(num)
+        l = self.State
 
-        temp = self.State[zero[0]][zero[1]]
-        self.State[zero[0]][zero[1]] = self.State[number[0]][number[1]]
-        self.State[number[0]][number[1]] = temp
+        temp = l[zero[0]][zero[1]]
+        l[zero[0]][zero[1]] = l[number[0]][number[1]]
+        l[number[0]][number[1]] = temp
+
+        return l

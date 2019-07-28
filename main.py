@@ -11,4 +11,5 @@ if __name__ == "__main__":
     print(state.GoalState)
     state.printState()
     x = dfs(state)
+    print(x)
     print(x[1])
