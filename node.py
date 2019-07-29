@@ -19,37 +19,27 @@ class Board:
     def getIndex(self, v):
         for i, x in enumerate(self.State):
             if v in x:
-                return i, x.index(v)
+                return [i, x.index(v)]
 
     def getNeighbors(self):
-        zero = self.getIndex(0)
-        directions = []
+        i, j = self.getIndex(0)
         neighbors = []
-        if zero[1] + 1 < 3:
-            right = (zero[0], zero[1] + 1)
-            directions.append(right)
-        if zero[1] - 1 > -1:
-            left = (zero[0], zero[1] - 1)
-            directions.append(left)
-        if zero[0] - 1 > -1:
-            up = (zero[0] - 1, zero[1])
-            directions.append(up)
-        if zero[0] + 1 < 3:
-            down = (zero[0] + 1, zero[1])
-            directions.append(down)
 
-        for i in directions:
-            if self.State[i[0]][i[1]]:
-                neighbors.append(self.State[i[0]][i[1]])
+        if j + 1 < 3:
+            right = self.State[:]
+            right[i][j], right[i][j + 1] = right[i][j + 1], right[i][j]
+            neighbors.append(right)
+        if j - 1 > -1:
+            left = self.State[:]
+            left[i][j], left[i][j - 1] = left[i][j - 1], left[i][j]
+            neighbors.append(left)
+        if i - 1 > -1:
+            up = self.State[:]
+            up[i][j], up[i - 1][j] = up[i - 1][j], up[i][j]
+            neighbors.append(up)
+        if i + 1 < 3:
+            down = self.State[:]
+            down[i][j], down[i + 1][j] = down[i + 1][j], down[i][j]
+            neighbors.append(down)
+
         return neighbors
-
-    def swap(self, num):
-        zero = self.getIndex(0)
-        number = self.getIndex(num)
-        l = self.State
-
-        temp = l[zero[0]][zero[1]]
-        l[zero[0]][zero[1]] = l[number[0]][number[1]]
-        l[number[0]][number[1]] = temp
-
-        return l

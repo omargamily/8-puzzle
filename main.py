@@ -9,7 +9,6 @@ if __name__ == "__main__":
     state = Board(initialSate)
 
     print(state.GoalState)
-    state.printState()
     x = dfs(state)
-    print(x)
-    print(x[1])
+    print('process',x[0])
+    print('state',x[1].printState())
