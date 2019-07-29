@@ -1,12 +1,28 @@
 from node import Board
-import random
+from time import clock
 from Algorithms import dfs
+from Algorithms import bfs
 
 if __name__ == "__main__":
-    initialSate = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
-    random.shuffle(initialSate)
-
     state = Board([[1, 2, 3], [4, 5, 0], [6, 7, 8]])
 
-    x = dfs(state)
-    print('process',x[0])
+    userinput = input("[1]dfs    [2]bfs  [3]A*(Manhattan Distance)  [4]A*(Euclidean Distance) :-->")
+
+    try:
+        val = int(userinput)
+        print("....\n")
+    except ValueError:
+        print("try again")
+
+    if userinput == '1':
+        before = clock()
+        x = dfs(state)
+        after = clock()
+        print('process', x[0])
+        print('time took ', after - before, ' seconds')
+    else:
+        before = clock()
+        x = bfs(state)
+        after = clock()
+        print('process', x[0])
+        print('time took ', after - before, ' seconds')

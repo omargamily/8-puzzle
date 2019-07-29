@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2af53aca-5889-4195-9bf5-4dfa0b23e860" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms.py" afterPath="$PROJECT_DIR$/Algorithms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.py" afterPath="$PROJECT_DIR$/node.py" />
@@ -16,16 +15,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="node.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="24">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#261#332#0" expanded="false" />
-                <element signature="e#368#574#0" expanded="false" />
-                <element signature="e#611#707#0" expanded="false" />
-                <element signature="e#737#934#0" expanded="false" />
+                <element signature="e#106#223#0" expanded="false" />
+                <element signature="e#256#327#0" expanded="false" />
+                <element signature="e#363#569#0" expanded="false" />
+                <element signature="e#606#702#0" expanded="false" />
+                <element signature="e#732#929#0" expanded="false" />
+                <element signature="e#967#1688#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -38,17 +39,21 @@
               <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#301#345#0" expanded="false" />
+                <element signature="e#430#580#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Algorithms.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Algorithms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="168">
+              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding>
+                <element signature="e#59#487#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +71,7 @@
     <findStrings>
       <find>swap</find>
       <find>parent</find>
+      <find>getPath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,8 +81,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/Desktop/8puzzle/DFS.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/node.py" />
+        <option value="$USER_HOME$/Downloads/main.py" />
+        <option value="$USER_HOME$/Downloads/Algorithms.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Algorithms.py" />
       </list>
     </option>
@@ -240,17 +248,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -263,46 +264,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/Desktop/8puzzle/DFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#140#277#0" expanded="false" />
+            <element signature="e#344#540#0" expanded="false" />
+            <element signature="e#573#714#0" expanded="false" />
+            <element signature="e#736#907#0" expanded="false" />
+            <element signature="e#932#992#0" expanded="false" />
+            <element signature="e#1019#1732#0" expanded="false" />
+            <element signature="e#1760#2246#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/8puzzle/DFS.py">
+    <entry file="file://$USER_HOME$/Downloads/Algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        <state relative-caret-position="72">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#298#716#0" expanded="false" />
-            <element signature="e#738#909#0" expanded="false" />
-            <element signature="e#934#994#0" expanded="false" />
-            <element signature="e#1021#1734#0" expanded="false" />
+            <element signature="e#81#509#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#106#223#0" expanded="false" />
+            <element signature="e#256#327#0" expanded="false" />
+            <element signature="e#363#569#0" expanded="false" />
+            <element signature="e#606#702#0" expanded="false" />
+            <element signature="e#732#929#0" expanded="false" />
+            <element signature="e#967#1688#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#301#345#0" expanded="false" />
+            <element signature="e#430#580#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding>
-            <element signature="e#261#332#0" expanded="false" />
-            <element signature="e#368#574#0" expanded="false" />
-            <element signature="e#611#707#0" expanded="false" />
-            <element signature="e#737#934#0" expanded="false" />
+            <element signature="e#59#487#0" expanded="false" />
           </folding>
         </state>
       </provider>

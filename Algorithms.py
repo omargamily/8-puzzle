@@ -1,4 +1,4 @@
-from node import Board
+from collections import deque
 
 
 def dfs(initialState):
@@ -21,3 +21,23 @@ def dfs(initialState):
                 frontier.append(neighbor)
 
     return False, state
+
+def bfs(initialState):
+    step = 0
+    frontier = deque([initialState])
+    explored = []
+
+    while frontier:
+        state = frontier.popleft()
+        explored.append(state.id)
+
+        step = step + 1
+        print(step)
+        state.printState()
+
+        if state.compare():
+            return True, state
+
+        for neighbor in state.getNeighbors():
+            if not (neighbor.id in explored):
+                frontier.append(neighbor)

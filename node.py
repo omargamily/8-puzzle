@@ -1,8 +1,11 @@
+
+
+GoalState = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+
 class Board:
     def __init__(self, State=None):
         self.State = State
         self.id = ''.join(map(str, self.State))
-        GoalState = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
         self.goalid = ''.join(map(str, GoalState))
 
     def compare(self):
