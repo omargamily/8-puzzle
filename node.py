@@ -1,10 +1,12 @@
 class Board:
     def __init__(self, State=None):
         self.State = State
-        self.GoalState = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+        self.id = ''.join(map(str, self.State))
+        GoalState = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+        self.goalid = ''.join(map(str, GoalState))
 
     def compare(self):
-        if self.State == self.GoalState:
+        if self.id == self.goalid:
             return True
         return False
 
@@ -21,25 +23,34 @@ class Board:
             if v in x:
                 return [i, x.index(v)]
 
+    def copy(self):
+        duplicate = []
+        for i in range(3):
+            row = []
+            for j in range(3):
+                row.append(self.State[i][j])
+            duplicate.append(row)
+        return duplicate
+
     def getNeighbors(self):
         i, j = self.getIndex(0)
         neighbors = []
 
         if j + 1 < 3:
-            right = self.State[:]
+            right = self.copy()
             right[i][j], right[i][j + 1] = right[i][j + 1], right[i][j]
-            neighbors.append(right)
+            neighbors.append(Board(right))
         if j - 1 > -1:
-            left = self.State[:]
+            left = self.copy()
             left[i][j], left[i][j - 1] = left[i][j - 1], left[i][j]
-            neighbors.append(left)
+            neighbors.append(Board(left))
         if i - 1 > -1:
-            up = self.State[:]
+            up = self.copy()
             up[i][j], up[i - 1][j] = up[i - 1][j], up[i][j]
-            neighbors.append(up)
+            neighbors.append(Board(up))
         if i + 1 < 3:
-            down = self.State[:]
+            down = self.copy()
             down[i][j], down[i + 1][j] = down[i + 1][j], down[i][j]
-            neighbors.append(down)
+            neighbors.append(Board(down))
 
         return neighbors

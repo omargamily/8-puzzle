@@ -7,15 +7,17 @@ def dfs(initialState):
     explored = []
     while frontier:
         state = frontier.pop()
+        explored.append(state.id)
+
         count += 1
-        state.printState()
         print(count)
-        explored.append(state)
+        state.printState()
+
         if state.compare():
             return True, state
 
         for neighbor in state.getNeighbors():
-            if neighbor not in list(set().union(frontier, explored)):
-                frontier.append(Board(neighbor))
+            if not neighbor.id in explored:
+                frontier.append(neighbor)
 
     return False, state
