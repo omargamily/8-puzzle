@@ -4,6 +4,18 @@ class Board:
         self.id = ''.join(map(str, self.State))
         GoalState = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]
         self.goalid = ''.join(map(str, GoalState))
+        
+        if (self.state!=None):
+            self.g = State.g+1
+        else:
+            self.g = 0
+    
+    def getpath(self):
+        state,path =self,[]
+        while state:
+            path.append(state)
+            state = Board.State
+        yield from reversed(path)
 
     def compare(self):
         if self.id == self.goalid:
